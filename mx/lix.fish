@@ -21,4 +21,4 @@ cargo install eza fd-find starship ripgrep cfonts artem
 # Starship init and preset 
 echo "starship init fish | source" > ~/.config/fish/config.fish
 starship preset pure-preset > ~/.config/starship.toml
-cp ./lq/config2.fish ~/.config/fish/config.fish
+cp ./mx/config2.fish ~/.config/fish/config.fish
