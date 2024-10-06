@@ -67,16 +67,6 @@ def func1():
         # Hit enter in the search input field
         search_input.press("Enter")
 
-        # Wait for the image link to be present in the DOM
-        image_link = page.wait_for_selector(
-            'a.gallerythumb[href="/g/516162/10/"] img.lazyload[data-src="https://t5.nhentai.net/galleries/2962448/10t.png"]',
-            state="attached",
-            timeout=60000,  # Increase the timeout value to 60 seconds
-        )
-
-        # Click the image link
-        image_link.click()
-
         # Create sreenshot - wih current date time
         page.screenshot(path=f"clicks/{c_d}-s1.png", full_page=True)
 
