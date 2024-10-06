@@ -6,6 +6,7 @@ from rich import print as rprint  # For rprinting
 import requests as rq
 import typer as ty
 from selectolax.parser import HTMLParser
+from src.ban1 import banner
 
 app = ty.Typer()
 
@@ -19,6 +20,12 @@ def url(url: str):
 
     with open("output.txt", "w") as f:
         f.write(rez1.text)
+
+
+@app.command()
+def banr():
+    """print panty banner"""
+    banner("Fuc")
 
 
 if __name__ == "__main__":
