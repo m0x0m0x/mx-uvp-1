@@ -1,0 +1,14 @@
+[project]
+name = "pak1"
+version = "0.1.0"
+description = "CLI Application for testing"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+pak1 = "pak1:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
