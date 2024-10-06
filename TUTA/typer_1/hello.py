@@ -3,7 +3,6 @@
 from rich.console import Console
 from rich.panel import Panel
 from rich import print as rprint  # For rprinting
-
 import requests as rq
 import typer as ty
 from selectolax.parser import HTMLParser
